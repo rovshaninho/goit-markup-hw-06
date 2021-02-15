@@ -424,8 +424,21 @@
                     </li>
                 </ul>
             </div>
+            <!--- Subscribe to our newsletter --->
+            <div class="subscribe-form">
+                <p class="subscribe-text">подпишитесь на рассылку</p>
+                <form class="footer-form">
+                    <input type="email" class="subscribe-email" value="" placeholder="E-mail" />
+                    <button type="submit" class="hero-button button">Подписаться
+                        <svg class="telegram-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </button>    
+                </form>
+            </div>
         </div>
     </footer>
+    <!-- form container -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -433,8 +446,52 @@
                     <use href="./images/sprite.svg#icon-closing"></use>
                 </svg>
             </button>
+            <!-- questionnaire form -->
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <form action="#" class="modal-form">
+                
+                <label class="form-label" for="name">Имя</label>
+
+                <div class="input-container">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                    <input class="input" type="text" id="user-name" name="name-input" />
+                </div>
+
+                <label class="form-label" for="tel-input">Телефон</label>
+
+                <div class="input-container">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <input class="input" type="tel" id="tel-input" name="tel-input" />
+                </div>
+
+                <label class="form-label" for="email-input">Почта</label>
+
+                <div class="input-container">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                    <input class="input" type="email" id="email-input" name="email-input" />
+                </div>
+
+                <label class="form-label" for="comment">Комментарий</label>
+                <textarea class="textarea" id="comment" name="comment" rows="6" placeholder="Введите текст"></textarea>
+                
+                <div class="accept-box" role="group" aria-labelledby="accept-checkbox">
+                    <input type="checkbox" class="checkbox" name="accept-checkbox" id="accept-checkbox">
+                    <label for="accept-checkbox" class="label">Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="accept-link">Условия договора</a>
+                    </label>
+                </div>
+                <button class="hero-button button" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
+    
+
     <script src="./js/modal.js"></script>
 </body>
 </html>
